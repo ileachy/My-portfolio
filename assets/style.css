@@ -47,10 +47,6 @@ nav-toggle-label span::after {
   position: relative;
 }
 
-nav-toggle-label span::before,
-nav-toggle-label span::after {
-}
-
 nav {
   position: absolute;
   text-align: right;
