@@ -1,89 +1,84 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  display: block;
-}
-
 header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-position: center;
-  padding: 10px 10px;
-  top: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
-header h1 {
-  font-size: 40px;
-  font-weight: bold;
+body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
-header a {
-  text-decoration: none;
+.content {
+  display: grid;
+  place-items: center;
+  height: 200vh;
 }
 
-header nav {
-  margin: 7px 0;
+.nav-toggle {
+  display: none;
 }
 
-header nav ul {
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  border: 1px solid red;
+  height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+}
+
+nav-toggle-label span,
+nav-toggle-label span::before,
+nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 4px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+nav-toggle-label span::before,
+nav-toggle-label span::after {
+}
+
+nav {
+  position: absolute;
+  text-align: right;
+  top: 100%;
+  display: none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-header nav ul li a {
-  padding: 10px 15px;
-  font-size: 1.55vw;
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 40px 35px;
+nav a:hover {
+  color: blue;
 }
 
-footer h2 {
-  font-size: 40px;
-  margin: 0;
-}
-
-section {
-  padding: 60px;
-}
-
-.section-title {
-  display: inline-block;
-  border-right: 5px solid;
-  padding: 30px;
-  text-align: center;
-  font-size: 40px;
-}
-
-.hero {
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-image: url('""');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
-}
-
-.section-item p {
-  font-size: 17px;
-  display: flex;
-  flex-wrap: wrap;
+.nav-toggle:checked ~ nav {
+  display: block;
 }

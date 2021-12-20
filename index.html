@@ -3,18 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Ian's World</title>
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
   <body>
     <!--navigation-->
-    <header>
-      <h1>
-        <a href="/"> My Portfolio </a>
+    <header class="navbar">
+      <h1 class="head-main">
+        <a href="/"> Logo </a>
       </h1>
-      <nav>
+      <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+      <nav class="nav-items">
         <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
           <li>
             <a href="#about">About</a>
           </li>
@@ -26,34 +30,51 @@
           </li>
         </ul>
       </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span>X</span>
+      </label>
     </header>
+    <div>
+      <section class="hero">
+        <div class="hero-text"></div>
+      </section>
+    </div>
+    <main class="content">
+      <section id="about" class="bio">
+        <div class="section-item">
+          <h2 class="section-title">About me!</h2>
+          <div class="about-me">
+            <p>
+              Hi, My name is Ian Leach and I am a 26 year old coding student
+              from Ohio. I am very excited to learn about back-end and
+              full-stack development and even game development as well.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section class="hero">
-      <div class="hero-text"></div>
-    </section>
-
-    <section id="about">
-      <div class="section-item">
-        <h2 class="section-title">About me!</h2>
-        <p>
-          Hi, My name is Ian Leach and I am a 26 year old coding student from
-          ohio. I am very excited to learn about back-end and full-stack
-          development and also look in-to game development.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects">
+      <section class="projects">
+        <div>
+          <h2 class="section-title">Work!</h2>
+          <a href="https://ileachy.github.io/Job-hunter/"
+            >https://ileachy.github.io/Job-hunter/</a
+          >
+          <img
+            src="./assets/images/TheJobHunterFinal.png"
+            width="800"
+            height="500"
+            alt=""
+          />
+          <p></p>
+        </div>
+      </section>
       <div>
-        <h2 class="section-title">Work!</h2>
-        <p></p>
+        <footer id="contacts">
+          <h2 class="section-title">Contact me!</h2>
+          <div></div>
+          <p></p>
+        </footer>
       </div>
-    </section>
-
-    <footer id="contacts">
-      <h2 class="section-title">Contact me!</h2>
-      <div></div>
-      <p></p>
-    </footer>
+    </main>
   </body>
 </html>
