@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://github.com/ileachy/My-portfolio/issues)](https://github.com/ileachy/My-portfolio/issues)
+[![GitHub Issues](https://img.shields.io/github.com/ileachy/My-portfolio/issues)](https://github.com/ileachy/My-portfolio/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
