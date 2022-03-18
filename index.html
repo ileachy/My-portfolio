@@ -10,9 +10,7 @@
   <body>
     <!--navigation-->
     <header class="navbar">
-      <h1 class="head-main">
-        <a href="/"> Logo </a>
-      </h1>
+      <h1 class="logo">The Ian Index</h1>
       <input type="checkbox" class="nav-toggle" id="nav-toggle" />
       <nav class="nav-items">
         <ul>
@@ -26,65 +24,66 @@
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact Me</a>
+            <a href="#contacts">Contact Me</a>
           </li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">
-        <span>X</span>
+        <span></span>
       </label>
     </header>
-    <div>
-      <section class="hero">
-        <div class="hero-text"></div>
-      </section>
-    </div>
+    <!--Content-->
     <main class="content">
-      <section id="about" class="bio">
-        <div class="section-item">
-          <h2 class="section-title">About me!</h2>
-          <div class="about-me">
+      <!--S1-->
+      <section id="about">
+        <div class="parts">
+          <h2>About me!</h2>
+          <div class="part-info">
             <p>
               Hi, My name is Ian Leach and I am a 26 year old coding student
-              from Ohio. I am very excited to learn about back-end and
-              full-stack development and even game development as well in the
-              future.
+              from Ohio. I am very excited to learn about full-stack
+              development, ethical hacking and even game development as well in
+              the future.
             </p>
           </div>
         </div>
       </section>
-
-      <section class="projects">
-        <div>
-          <h2 class="section-title">Work!</h2>
-          <a href="https://ileachy.github.io/Job-hunter/"
-            >Job Hunter job search</a
-          >
-          <img
-            src="./assets/images/TheJobHunterFinal.png"
-            width="800"
-            height="500"
-            alt=""
-          />
-          <a href="https://arcane-reef-45830.herokuapp.com/"
-            >Sweet Sports Stuff ecommerce</a
-          >
-          <img
-            src="./assets/images/sweetSportsStuff.jpg"
-            width="800"
-            height="500"
-            alt=""
-          />
-          <p></p>
+      <!--S2-->
+      <section id="projects">
+        <div class="parts">
+          <h2>Projects!</h2>
+          <div class="part-info">
+            <div class="part-img">
+              <div class="img-title">
+                <a href="https://ileachy.github.io/Job-hunter/"
+                  >Job Hunter job search</a
+                >
+              </div>
+              <div class="img">
+                <img src="./assets/images/TheJobHunterFinal.png" alt="" />
+              </div>
+            </div>
+            <div class="part-img">
+              <div class="img-title">
+                <a src="" href="https://arcane-reef-45830.herokuapp.com/"
+                  >Sweet Sports Stuff ecommerce</a
+                >
+              </div>
+              <div class="img">
+                <img src="./assets/images/sweetSportsStuff.jpg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <div>
-        <footer id="contacts">
-          <h2 class="section-title">Contact me!</h2>
-          <div></div>
-          <p></p>
-        </footer>
-      </div>
     </main>
+    <!--Footer-->
+    <footer id="contacts">
+      <div class="footer-content">
+        <h2 class="section-title">Contact me!</h2>
+        <div></div>
+        <p></p>
+      </div>
+    </footer>
   </body>
 </html>
